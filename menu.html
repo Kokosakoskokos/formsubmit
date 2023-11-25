@@ -4,25 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Website</title>
+    
     <style>
-      .main-content {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .main-content {
-                width: 100%;
-                padding: 10px;
-            }
-        }
-         body {
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -41,6 +25,7 @@
             justify-content: center;
             background-color: #444;
             padding: 10px;
+            flex-wrap: wrap; /* Added for responsiveness */
         }
 
         nav a {
@@ -53,12 +38,13 @@
         nav1 {
             display: flex;
             justify-content: center;
-            background-color:#F4F4F4;
+            background-color: #F4F4F4;
             padding: 10px;
+            flex-wrap: wrap; /* Added for responsiveness */
         }
         
         nav1 a {
-            color:#444;
+            color: #444;
             text-decoration: none;
             padding: 10px;
             margin: 0 10px;
@@ -70,6 +56,7 @@
 
         .menu-item {
             display: flex;
+            flex-wrap: wrap; /* Added for responsiveness */
             justify-content: space-between;
             margin-bottom: 20px;
         }
